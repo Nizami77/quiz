@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-color: #94a3b8;
+        }
+
+        .btn{
+            font-weight: 500;
+            width: 100%;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: left;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .btn:hover{
+            background-color: #fef08a;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-[600px] mx-auto mt-10 bg-white p-[30px] rounded-lg">
+        <h1 class="font-bold text-[#0369a1] border-b pb-[30px]">Quiz</h1>
+        <div class="quiz py-[20px] px-[0]">
+            <h2 id="question" class="text-[#22d3ee]">burada sual var</h2>
+            <div id="timer" class="text-[#0369a1] font-bold text-xl mb-4"></div>
+            <div id="btn-answer">
+                <button class="btn">answer 1</button>
+                <button class="btn">answer 2</button>
+                <button class="btn">answer 3</button>
+                <button class="btn">answer 4</button>
+            </div>
+            <button id="btn-next" class="bg-blue-500 text-white w-[150px] p-[10px] my-[20px] ml-auto mr-[0] rounded-lg hidden">Next</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
